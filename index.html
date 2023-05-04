@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chat Module</title>
+    <!-- normal meta tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="chat app, instant messaging, real-time communication, chat interface, chat history, chat window, chat room, chat box, chat widget, chatbot, chat user interface, chat design, chat functionality, chat features, chat functionality, chat module, web chat, online chat, group chat, private chat, chat API, chat integration, chat customization, chat security, chat encryption, chat privacy, chat authentication, chat authorization
+    ">
+
+    <!-- Author Contact -->
+    <meta name="author" content="Your Name">
+    <meta name="email" content="youremail@example.com">
+    <meta name="url" content="https://yourwebsite.com">
+
+    <!-- style links tags -->
+    <link rel="shortcut icon" href="img/wonder_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="Style/css/style.css">
+    <script defer src="Style/fontawesome/fontawesome.js"></script>
+    <script defer src="Style/fontawesome/all.js"></script>
+    <script defer src="Style/js/style.js"></script>
+
+    <!-- scripts link tag -->
+
+
+</head>
+
+<body>
+    <div class="body__chat">
+        <div class="body__chat-list">
+            <div class="logo">
+                Officorp
+            </div>
+            <div class="search__user">
+                <div class="search__user--typing-zone">
+                    <span class="fa-solid fa-search icon myBtn"></span>
+                    <input type="text" name="search__user-typing-zone" id="search__user-typing-zone"
+                        placeholder="Type a name here...">
+                </div>
+                <div class="search__user--filter-zone">
+                    <label class="filter__item myBtn">
+                        <input type="checkbox" name="username-filter" value="username">
+                        User Name
+                    </label>
+                    <label class="filter__item myBtn">
+                        <input type="checkbox" name="online-filter" value="online">
+                        Is Online
+                    </label>
+                    <label class="filter__item filter__clear myBtn">
+                        <input type="checkbox" name="clear-filter" value="clear">
+                        <span class="fa-solid fa-close icon myBtn"></span>
+                        &nbsp;Clear
+                    </label>
+                </div>
+            </div>
+            
+            <div class="list__chat--list">
+                <div class="chat__list-item myBtn">
+                    <div class="chat__profile--picture">
+                        <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                    </div>
+
+                    <div class="chat__details">
+                        <div class="chat__details--header">
+                            <span class="chat__details--user-name">
+                                Wonder NG
+                            </span>
+                            <span class="chat__details--date">
+                                27/04/2023
+                            </span>
+                        </div>
+
+                        <div class="chat__details--footer">
+                            <span class="chat__details--message">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, numquam.
+                            </span>
+                            <span class="chat__details--time">
+                                5:12
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            <!--                 
+                <div class="chat__preview">
+                    
+                    <div class="preview__details">
+                        <div class="chat__profile--picture preview__profile-picture">
+                            <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                        </div>
+                        <div class="preview__details--user-name">
+                            Wonder NG
+                        </div>
+                        <div class="preview__details--message-history">
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores molestias quaerat, omnis ea
+                            odio, dolor a explicabo in molestiae alias laboriosam enim consequatur doloremque ad. Deleniti
+                            excepturi illo nobis sint?
+                        </div>
+                    </div>
+                    
+                </div>
+             -->
+
+                This is a list of conversations.
+                <div class="chat__list-item myBtn">
+                    <div class="chat__profile--picture">
+                        <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                    </div>
+
+                    <div class="chat__details">
+                        <div class="chat__details--header">
+                            <span class="chat__details--user-name">
+                                Wonder NG
+                            </span>
+                            <span class="chat__details--date">
+                                27/04/2023
+                            </span>
+                        </div>
+
+                        <div class="chat__details--footer">
+                            <span class="chat__details--message">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, numquam.
+                            </span>
+                            <span class="chat__details--time">
+                                5:12
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat__list-item myBtn">
+                    <div class="chat__profile--picture">
+                        <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                    </div>
+
+                    <div class="chat__details">
+                        <div class="chat__details--header">
+                            <span class="chat__details--user-name">
+                                Wonder NG
+                            </span>
+                            <span class="chat__details--date">
+                                27/04/2023
+                            </span>
+                        </div>
+
+                        <div class="chat__details--footer">
+                            <span class="chat__details--message">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, numquam.
+                            </span>
+                            <span class="chat__details--time">
+                                5:12
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat__list-item myBtn">
+                    <div class="chat__profile--picture">
+                        <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                    </div>
+
+                    <div class="chat__details">
+                        <div class="chat__details--header">
+                            <span class="chat__details--user-name">
+                                Wonder NG
+                            </span>
+                            <span class="chat__details--date">
+                                27/04/2023
+                            </span>
+                        </div>
+
+                        <div class="chat__details--footer">
+                            <span class="chat__details--message">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, numquam.
+                            </span>
+                            <span class="chat__details--time">
+                                5:12
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat__list-item myBtn">
+                    <div class="chat__profile--picture">
+                        <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                    </div>
+
+                    <div class="chat__details">
+                        <div class="chat__details--header">
+                            <span class="chat__details--user-name">
+                                Wonder NG
+                            </span>
+                            <span class="chat__details--date">
+                                27/04/2023
+                            </span>
+                        </div>
+
+                        <div class="chat__details--footer">
+                            <span class="chat__details--message">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, numquam.
+                            </span>
+                            <span class="chat__details--time">
+                                5:12
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat__list-item myBtn">
+                    <div class="chat__profile--picture">
+                        <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                    </div>
+
+                    <div class="chat__details">
+                        <div class="chat__details--header">
+                            <span class="chat__details--user-name">
+                                Wonder NG
+                            </span>
+                            <span class="chat__details--date">
+                                27/04/2023
+                            </span>
+                        </div>
+
+                        <div class="chat__details--footer">
+                            <span class="chat__details--message">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, numquam.
+                            </span>
+                            <span class="chat__details--time">
+                                5:12
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat__list-item myBtn">
+                    <div class="chat__profile--picture">
+                        <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                    </div>
+
+                    <div class="chat__details">
+                        <div class="chat__details--header">
+                            <span class="chat__details--user-name">
+                                Wonder NG
+                            </span>
+                            <span class="chat__details--date">
+                                27/04/2023
+                            </span>
+                        </div>
+
+                        <div class="chat__details--footer">
+                            <span class="chat__details--message">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, numquam.
+                            </span>
+                            <span class="chat__details--time">
+                                5:12
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat__list-item myBtn">
+                    <div class="chat__profile--picture">
+                        <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                    </div>
+
+                    <div class="chat__details">
+                        <div class="chat__details--header">
+                            <span class="chat__details--user-name">
+                                Wonder NG
+                            </span>
+                            <span class="chat__details--date">
+                                27/04/2023
+                            </span>
+                        </div>
+
+                        <div class="chat__details--footer">
+                            <span class="chat__details--message">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, numquam.
+                            </span>
+                            <span class="chat__details--time">
+                                5:12
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="body__chat-conversation">
+            <div class="conversation__header">
+                <div class="conversation__header-left">
+                    <span class="fa-solid fa-arrow-left icon myBtn" title="Close this conversation"></span>
+                    <div class="chat__profile--picture">
+                        <img src="../img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                    </div>
+                    <span class="chat__details--user-name">
+                        Wonder NG
+                    </span>
+                </div>
+                <div class="conversation__header-right">
+                    <div class="options">
+                        <div class="option__item">
+                            <span class="fa-solid fa-cubes-stacked icon myBtn"></span>
+                        </div>
+                        <div class="option__item">
+                            <span class="fa-solid fa-cubes-stacked icon myBtn"></span>
+                        </div>
+                        <div class="option__item">
+                            <span class="fa-solid fa-cubes-stacked icon myBtn"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="conversation__body">
+                <div class="incomingMessage message">
+                    <div class="incomingMessage__content message__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ad iusto ullam voluptatem nemo hic alias repellat obcaecati eos adipisci? Similique vitae commodi unde praesentium dolores nam nesciunt impedit ducimus.
+                    </div>
+                    <div class="incomingMessage__details message__details">
+                        <span class="incomingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+
+                <div class="outgoingMessage">
+                    <div class="outgoingMessage__content message__content">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium odit natus dolorem. Ipsum aut autem aliquam nam at nisi vero unde quisquam reprehenderit, facilis perspiciatis, ducimus consectetur. Deleniti, reiciendis dolore!
+                    </div>
+                    <div class="outgoingMessage__details message__details">
+                        <span class="outgoingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+                This area will contain all the messages history.
+                <div class="incomingMessage message">
+                    <div class="incomingMessage__content message__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ad iusto ullam voluptatem nemo hic alias repellat obcaecati eos adipisci? Similique vitae commodi unde praesentium dolores nam nesciunt impedit ducimus.
+                    </div>
+                    <div class="incomingMessage__details message__details">
+                        <span class="incomingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+
+                <div class="outgoingMessage">
+                    <div class="outgoingMessage__content message__content">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium odit natus dolorem. Ipsum aut autem aliquam nam at nisi vero unde quisquam reprehenderit, facilis perspiciatis, ducimus consectetur. Deleniti, reiciendis dolore!
+                    </div>
+                    <div class="outgoingMessage__details message__details">
+                        <span class="outgoingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+
+                <div class="incomingMessage message">
+                    <div class="incomingMessage__content message__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ad iusto ullam voluptatem nemo hic alias repellat obcaecati eos adipisci? Similique vitae commodi unde praesentium dolores nam nesciunt impedit ducimus.
+                    </div>
+                    <div class="incomingMessage__details message__details">
+                        <span class="incomingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+
+                <div class="outgoingMessage">
+                    <div class="outgoingMessage__content message__content">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium odit natus dolorem. Ipsum aut autem aliquam nam at nisi vero unde quisquam reprehenderit, facilis perspiciatis, ducimus consectetur. Deleniti, reiciendis dolore!
+                    </div>
+                    <div class="outgoingMessage__details message__details">
+                        <span class="outgoingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+
+                <div class="incomingMessage message">
+                    <div class="incomingMessage__content message__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ad iusto ullam voluptatem nemo hic alias repellat obcaecati eos adipisci? Similique vitae commodi unde praesentium dolores nam nesciunt impedit ducimus.
+                    </div>
+                    <div class="incomingMessage__details message__details">
+                        <span class="incomingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+
+                <div class="outgoingMessage">
+                    <div class="outgoingMessage__content message__content">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium odit natus dolorem. Ipsum aut autem aliquam nam at nisi vero unde quisquam reprehenderit, facilis perspiciatis, ducimus consectetur. Deleniti, reiciendis dolore!
+                    </div>
+                    <div class="outgoingMessage__details message__details">
+                        <span class="outgoingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+
+                <div class="incomingMessage message">
+                    <div class="incomingMessage__content message__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ad iusto ullam voluptatem nemo hic alias repellat obcaecati eos adipisci? Similique vitae commodi unde praesentium dolores nam nesciunt impedit ducimus.
+                    </div>
+                    <div class="incomingMessage__details message__details">
+                        <span class="incomingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+
+                <div class="outgoingMessage">
+                    <div class="outgoingMessage__content message__content">
+                        Lorem ipsum dolor,  sit amet consectetur adipisicing elit. Praesentium odit natus dolorem. Ipsum aut autem aliquam nam at nisi vero unde quisquam reprehenderit, facilis perspiciatis, ducimus consectetur. Deleniti, reiciendis dolore!
+                    </div>
+                    <div class="outgoingMessage__details message__details">
+                        <span class="outgoingMessage__details--time message__details--time">
+                            5:54 p.m
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="conversation__footer">
+                <div class="options">
+                    <div class="option__item">
+                        <span class="fa-solid fa-paperclip icon myBtn" title="Send Photo, Documents, etc."></span>
+                    </div>
+                    <div class="option__item">
+                        <span class="fa-solid fa-microphone icon myBtn" title="Record a message"></span>
+                    </div>
+                </div>
+
+                <div class="conversation__footer--typing-area">
+                    <textarea class="typingArea" name="typingArea" id="typingArea" rows="1" placeholder="Type a message"></textarea>
+                </div>
+
+                <div class="options">
+                    <div class="option__item"><span class="fa-solid fa-paper-plane icon myBtn" title="Send the message"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
