@@ -249,7 +249,7 @@ textarea {
 
 .conversation__header {
   background-color: var(--color-palette__lightest-gray);
-  padding: 10px;
+  padding: .2em;
   border-bottom: 1px solid var(--color-palette__light-gray);
   display: flex;
 }
@@ -323,7 +323,7 @@ background: linear-gradient(60deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
 
 .conversation__footer {
   background-color: var(--color-palette__lightest-gray);
-  padding: 10px;
+  padding: 1em 0;
   border-top: 1px solid var(--color-palette__light-gray);
   display: flex;
   justify-content: center;

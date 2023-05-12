@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block head %}
+    {% endblock %}
+    <!-- normal meta tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="chat app, instant messaging, real-time communication, chat interface, chat history, chat window, chat room, chat box, chat widget, chatbot, chat user interface, chat design, chat functionality, chat features, chat functionality, chat module, web chat, online chat, group chat, private chat, chat API, chat integration, chat customization, chat security, chat encryption, chat privacy, chat authentication, chat authorization
+    ">
+
+    <!-- Author Contact -->
+    <meta name="author" content="Your Name">
+    <meta name="email" content="youremail@example.com">
+    <meta name="url" content="https://yourwebsite.com">
+
+    <!-- style links tags -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/wonder_logo.svg') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/css/style.css') }}">
+    <script defer src="{{ url_for('static', filename='fontawesome/fontawesome.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='style/fontawesome/all.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='style/js/style.js') }}"></script>
+
+
+    <!-- scripts link tag -->
+</head>
+
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
