@@ -1,5 +1,5 @@
     {% extends 'base.html' %}
-    {% block head %}
+    {% block title %}
     <title>Chat Module</title>
     {% endblock %}
 {% block body %}
@@ -32,15 +32,16 @@
             </div>
             
             <div class="list__chat--list">
+                {% for user in users %}
                 <div class="chat__list-item myBtn">
                     <div class="chat__profile--picture">
-                        <img src="static/img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
+                        <img src="static/img/profile_img/wonderDVL.jpg" alt="{{user.1}} Profile Picture">
                     </div>
 
                     <div class="chat__details">
                         <div class="chat__details--header">
                             <span class="chat__details--user-name">
-                                Wonder NG
+                                {{user.1}}
                             </span>
                             <span class="chat__details--date">
                                 27/04/2023
@@ -57,6 +58,7 @@
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             <!--                 
                 <div class="chat__preview">
                     
@@ -78,34 +80,6 @@
                 </div>
              -->
 
-                <!-- This is a list of conversations. -->
-                {% for i in range (0,17)%}
-                    <div class="chat__list-item myBtn">
-                        <div class="chat__profile--picture">
-                            <img src="static/img/profile_img/wonderDVL.jpg" alt="User Profile Pic">
-                        </div>
-
-                        <div class="chat__details">
-                            <div class="chat__details--header">
-                                <span class="chat__details--user-name">
-                                    Wonder NG
-                                </span>
-                                <span class="chat__details--date">
-                                    27/04/2023
-                                </span>
-                            </div>
-
-                            <div class="chat__details--footer">
-                                <span class="chat__details--message">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, numquam.
-                                </span>
-                                <span class="chat__details--time">
-                                    5:12
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
             </div>
         </div>
 
@@ -208,4 +182,7 @@
             </div>
         </div>
     </div>
+{% endblock %}
+{% block body_script %}
+<script src="/static/modules/conversation/conversation.header.js"></script>
 {% endblock %}
